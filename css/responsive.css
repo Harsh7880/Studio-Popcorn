@@ -1,0 +1,201 @@
+@media(min-width: 782px) {
+    .header .nav {
+        display: block !important;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .gallery-section .gallery-item,
+    .people-section .people-item,
+    .event-section .event-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .header .button{
+        display: none;
+    }
+    .classes-section .grid--3-cols {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+    .testimonials-box {
+        grid-template-columns: 1fr;
+        gap: 1rem 1rem;
+        width: 80%;
+    }
+
+    .testimonials-section {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-container {
+        padding: 6rem;
+    }
+}
+
+@media(max-width: 781px) {
+/**********************************/
+    /* HEADER SECTION */
+    /**********************************/
+    .header .logo {
+        padding: 8px 15px;
+    }
+    .header .logo img {
+       width: 120px;
+    }
+    .header .hamburger-btn {
+        display: flex;
+        margin-right: 5%;
+        background-color: black;
+    }
+
+    .header .nav {
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-color: #ffffff;
+        border-top: 1px solid #cccccc;
+        display: none;
+    }
+
+    .header .nav ul li {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .header .nav ul li a {
+        color: #555555;
+        padding: 10px 0;
+    }
+
+    .home-section .home-content h1 {
+        font-size: 50px;
+    }
+    .home-section .hero-text{
+        margin-top: 50px;
+        padding:  40px;
+        margin-left: 20px;
+    }
+    .home-section .hero-text h1{
+        font-size: 3.5rem !important;
+      }
+      .home-section .container-fluid .row {
+        flex-direction: column-reverse;
+      }
+      .home-section .banner-image{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .home-section img{
+        max-width: 60%;
+        margin-top: 150px;
+      }
+    #about-us .about img{
+        margin-bottom: 5rem;
+    }
+    #about-us .section-title {
+        margin-bottom: 5rem;
+    }
+}
+
+
+@media(max-width: 674px) {
+    .header .container {
+        padding: 15px 0;
+    }
+
+    .header .button a {
+        display: none;
+    }
+
+    .header .logo {
+        margin-right: 150px;
+    }
+
+    .home-section .home-content p {
+        font-size: 24px;
+        margin-top: 0px;
+    }
+
+    .home-section .slide.active .home-content p {
+        opacity: 0;
+        animation: fadeInTop 1s ease forwards;
+    }
+
+    @keyframes fadeInTop {
+        0% {
+            transform: translateY(-25px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .home-section .home-content h1 {
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+    .home-section .home-content button {
+        font-size: 18px;
+        padding: 10px 30px;
+        margin-top: 25px;
+    }
+
+    .rows {
+        flex-direction: column;
+    }
+
+    /* Gallery Section */
+
+    .gallery-section .gallery-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    footer {
+        bottom: unset;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+
+    .classes-section .grid--3-cols {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .testimonials-box {
+        grid-template-columns: 1fr;
+        gap: 1rem 1rem;
+    }
+
+    .testimonials-section {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-container {
+        padding: 6rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+
+    .people-section .people-item {
+        flex: 0 0 100%;
+        max-width: 80%;
+        padding: 5px;
+        margin-top: 7rem;
+    }
+}
