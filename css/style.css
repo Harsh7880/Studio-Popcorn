@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+
+/* Typography */
+/*----------------------------------------------*/
+
+h2,
+.h2 {
+  font-size: 2em;
+  line-height: 1.4;
+}
+
 h1,
 .h1,
 h2,
@@ -15,6 +25,42 @@ h4,
   line-height: 1.2;
 }
 
+h3,
+.h3 {
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+h4,
+.h4 {
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  font-weight: inherit;
+  color: inherit;
+}
+
+p {
+  font-family: var(--body-font);
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+.my-6 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 html {
   font-size: 62.5%;
 }
@@ -33,11 +79,8 @@ body {
   --header-height: 100px;
   --header-height-min: 80px;
   /* Fonts */
-
   --body-font: "Roboto", sans-serif;
   --heading-font: "Oswald", sans-serif;
-
-
 }
 
 * {
@@ -45,7 +88,17 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+::selection {
+  background: var(--primary-light-color);
+  color: var(--dark-color);
+  text-shadow: none;
+}
 
+::-moz-selection {
+  background: var(--primary-light-color);
+  color: var(--dark-color);
+  text-shadow: none;
+}
 a {
   text-decoration: none;
 }
@@ -95,6 +148,18 @@ footer {
   width: 100%;
 }
 
+/*--- Section And Elements Title
+  -----------------------------------------------*/
+
+  .section-title {
+    position: relative;
+    font-size: 2.2em;
+    font-weight: 100;
+    font-weight: 300;
+    --heading-font: "Oswald", Georgia, serif;
+    margin-bottom: 4rem;
+  }
+
 /**********************************/
 /* HEADET SECTION */
 /**********************************/
@@ -116,12 +181,7 @@ footer {
 .header .logo {
   padding: 0 15px;
 }
-.header .togglelogo{
-  display: none;
-}
-.togglelogo{
-  display: block;
-}
+
 .header .logo img {
   width: 120px;
 }
@@ -245,94 +305,6 @@ footer {
   max-width: 90%;
   margin-top: 150px;
 }
-.home-section .slide {
-  background-size: cover;
-  background-position: center center;
-  object-fit: cover;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 1s ease-in-out;
-}
-
-.home-section .slide:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .3header);
-  z-index: -1;
-}
-
-.home-section .box {
-  min-height: 100vh;
-}
-
-.home-section .home-content {
-  flex: 0 0 100%;
-  max-width: 100%;
-  padding: 0 15px;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.home-section .home-content p {
-  font-size: 24px;
-  color: #ffffff;
-  margin: 0 0 15px;
-}
-
-.home-section .slide.active .home-content p {
-  opacity: 0;
-  animation: fadeInTop 1s ease forwards;
-}
-
-@keyframes fadeInTop {
-  0% {
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.home-section .home-content h1 {
-  font-size: 40px;
-
-  color: #ffffff;
-  margin: 0;
-  font-weight: normal;
-}
-
-.home-section .slide.active .home-content h1 {
-  opacity: 0;
-  animation: fadeInTop 1s ease forwards;
-  animation-delay: 0.5s;
-}
-
-.home-section .home-content button {
-  font-size: 20px;
-  display: inline-block;
-  border: 1px solid #ffffff;
-  border-radius: 30px;
-  color: #ffffff;
-  padding: 7px 30px;
-  margin: 15px 0 0;
-  background: transparent;
-}
-
-.home-section .slide.active .home-content button {
-  opacity: 0;
-  animation: fadeInTop 1s ease forwards;
-  animation-delay: 1s;
-}
 
 .home-section .classes-students-imgs {
   display: flex;
@@ -382,358 +354,6 @@ footer {
 }
 .event-section .text-center a{
 border: 1px solid #c9a488 !important;
-}
-/**********************************/
-/* WEDDING POPCORN SECTION */
-/**********************************/
-
-.gallery-section {
-  padding: 80px 0 0px;
-  margin-bottom: 100px;
-}
-
-.gallery-section .gallery-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  padding: 15px;
-}
-
-.gallery-section .gallery-item-inner {
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.gallery-section .gallery-item-inner img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  transform: scale(1.1);
-  transition: all 0.5s ease;
-  border-radius: 20px;
-}
-
-.gallery-section .gallery-item-inner:hover img {
-  transform: scale(1);
-}
-
-/* gallery popup */
-.gallery-popup {
-  cursor: zoom-out;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1099;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
-.gallery-popup.open {
-  display: flex;
-}
-
-.gallery-popup img.gp-img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  padding: 40px 0;
-}
-
-.gallery-popup .gp-container {
-  position: relative;
-  cursor: auto;
-}
-
-.gallery-popup .gp-counter {
-  display: block;
-  height: 40px;
-  color: #ffffff;
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  line-height: 40px;
-  font-weight: bold;
-  cursor: auto;
-}
-
-.gallery-popup .gp-close {
-  display: block;
-  height: 40px;
-  width: 40px;
-  color: #ffffff;
-  font-size: 30px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-align: center;
-  line-height: 38px;
-  overflow: hidden;
-  cursor: zoom-out;
-}
-
-.gallery-popup .gp-controls {
-  position: absolute;
-  display: flex;
-  left: 0;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.gallery-popup .gp-controls .prev,
-.gallery-popup .gp-controls .next {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.gallery-popup .gp-controls .prev i,
-.gallery-popup .gp-controls .next i {
-  color: #ffffff;
-  font-size: 20px;
-  display: block;
-  height: 30px;
-  width: 30px;
-  text-align: center;
-  line-height: 30px;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: all 0.5s ease;
-}
-
-.gallery-popup .gp-controls .prev:hover i,
-.gallery-popup .gp-controls .next:hover i {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-********************************
-/* FOOTER SECTION */
-/**********************************/
-
-/* footer {
-  width: 100%;
-  background-color: #e9dacf;
-  color: #fff;
-  padding: 50px 0 30px;
-  font-size: 10px;
-  line-height: 20px;
-} */
-
-.footer-row {
-  width: 85%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.footer-row p {
-  text-align: left;
-  font-size: 15px;
-}
-
-.footer-row h1 {
-  text-align: left;
-  font-size: 25px;
-  margin-bottom: 30px;
-  color: #000;
-}
-
-.col {
-  flex-basis: 25%;
-  padding: 10px;
-}
-
-.col:nth-child(2),
-.col:nth-child(3) {
-  flex-basis: 20%;
-}
-
-footer .footer-logo {
-  width: 150px;
-  height: 150px;
-}
-
-footer .footer-logo img {
-  width: 100%;
-}
-
-footer p {
-  line-height: 0;
-  color: #000;
-}
-
-.rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 5.125rem;
-  height: 5.125rem;
-  border: 0.125rem solid transparent;
-  padding: 12px;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 50%;
-  transition: all 0.5s ease;
-  margin-right: 2rem;
-  margin-bottom: 0.25rem;
-}
-
-.rounded-social-buttons .social-button:hover,
-.rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-.fa-facebook-f,
-.fa-youtube,
-.fa-instagram {
-  font-size: 25px;
-}
-
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-}
-
-.rounded-social-buttons .social-button.facebook:hover,
-.rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
-
-.rounded-social-buttons .social-button.youtube {
-  background: #bb0000;
-}
-
-.rounded-social-buttons .social-button.youtube:hover,
-.rounded-social-buttons .social-button.youtube:focus {
-  color: #bb0000;
-  background: #fefefe;
-  border-color: #bb0000;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
-}
-
-.rounded-social-buttons .social-button.instagram:hover,
-.rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-}
-
-button {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  outline: 0;
-}
-
-figure {
-  margin: 0;
-}
-
-::selection {
-  background: var(--primary-light-color);
-  color: var(--dark-color);
-  text-shadow: none;
-}
-
-::-moz-selection {
-  background: var(--primary-light-color);
-  color: var(--dark-color);
-  text-shadow: none;
-}
-
-/* image align */
-
-/* Typography */
-/*----------------------------------------------*/
-
-
-
-
-h2,
-.h2 {
-  font-size: 2em;
-  line-height: 1.4;
-}
-
-h3,
-.h3 {
-  font-size: 1.4em;
-  line-height: 1.4;
-}
-
-h4,
-.h4 {
-  font-size: 1.1em;
-  line-height: 1.4;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a {
-  font-weight: inherit;
-  color: inherit;
-}
-
-p {
-  font-family: var(--body-font);
-  font-size: 18px;
-  line-height: 1.7;
-  margin: 0 0 20px 0;
-}
-
-p:empty {
-  display: none;
-}
-
-/*----------------------------------------------*/
-/* 2.1 Floating & Alignment */
-/*----------------------------------------------*/
-
-/**::after,*/
-.container::after,
-.row::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-/*--- Section And Elements Title
-  -----------------------------------------------*/
-.section-header {
-  width: 100%;
-  padding-bottom: 50px;
-}
-
-.section-title {
-  position: relative;
-  font-size: 2.2em;
-  font-weight: 100;
-  font-weight: 300;
-  --heading-font: "Oswald", Georgia, serif;
-}
-
-.padding-large {
-  padding-top: 6em;
-  padding-bottom: 6em;
 }
 
 
@@ -942,12 +562,6 @@ p:empty {
   overflow: hidden;
 }
 
-
-
-
-
-
-
 /**********************************/
 /* Tariner's Section */
 /**********************************/
@@ -1025,8 +639,139 @@ p:empty {
   color: #f3f2f1;
 }
 
+/**********************************/
+/* WEDDING POPCORN SECTION */
+/**********************************/
 
-/*** Footer Start ***/
+.gallery-section {
+  padding: 80px 0 0px;
+  margin-bottom: 100px;
+}
+
+.gallery-section .gallery-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+}
+
+.gallery-section .gallery-item-inner {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .gallery-item-inner img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  border-radius: 20px;
+}
+
+.gallery-section .gallery-item-inner:hover img {
+  transform: scale(1);
+}
+
+/* gallery popup */
+.gallery-popup {
+  cursor: zoom-out;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1099;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.gallery-popup.open {
+  display: flex;
+}
+
+.gallery-popup img.gp-img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 40px 0;
+}
+
+.gallery-popup .gp-container {
+  position: relative;
+  cursor: auto;
+}
+
+.gallery-popup .gp-counter {
+  display: block;
+  height: 40px;
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 40px;
+  font-weight: bold;
+  cursor: auto;
+}
+
+.gallery-popup .gp-close {
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 38px;
+  overflow: hidden;
+  cursor: zoom-out;
+}
+
+.gallery-popup .gp-controls {
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-popup .gp-controls .prev,
+.gallery-popup .gp-controls .next {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.gallery-popup .gp-controls .prev i,
+.gallery-popup .gp-controls .next i {
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+}
+
+.gallery-popup .gp-controls .prev:hover i,
+.gallery-popup .gp-controls .next:hover i {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/**********************************/
+/* Footer Section */
+/**********************************/
 .footer{
   background-color: #e9dacf;
 }
@@ -1063,30 +808,76 @@ p:empty {
   font-weight: 400 !important;
   font-family: 'Playball', cursive !important;
 }
-h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw) !important;
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 5.125rem;
+  height: 5.125rem;
+  border: 0.125rem solid transparent;
+  padding: 12px;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  margin-right: 2rem;
+  margin-bottom: 0.25rem;
 }
 
-/*** Footer End ***/
-
-
-.my-6 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
-.py-6 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.fa-facebook-f,
+.fa-youtube,
+.fa-instagram {
+  font-size: 25px;
 }
 
-.row {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(var(--bs-gutter-y)*-1);
-  margin-right: calc(var(--bs-gutter-x)/-2);
-  margin-left: calc(var(--bs-gutter-x)/-2);
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
 }
+
+.rounded-social-buttons .social-button.facebook:hover,
+.rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover,
+.rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+
+
+figure {
+  margin: 0;
+}
+
+
 
