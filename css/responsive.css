@@ -12,13 +12,16 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .header .button{
+
+    .header .button {
         display: none;
     }
+
     .classes-section .grid--3-cols {
         grid-template-columns: repeat(1, 1fr);
-        width: 80%;
+        width: 95%;
     }
+
     .testimonials-box {
         grid-template-columns: 1fr;
         gap: 1rem 1rem;
@@ -35,15 +38,15 @@
 }
 
 @media(max-width: 781px) {
-/**********************************/
-    /* HEADER SECTION */
-    /**********************************/
+
     .header .logo {
         padding: 8px 15px;
     }
+
     .header .logo img {
-       width: 120px;
+        width: 120px;
     }
+
     .header .hamburger-btn {
         display: flex;
         margin-right: 5%;
@@ -71,31 +74,71 @@
     .home-section .home-content h1 {
         font-size: 50px;
     }
-    .home-section .hero-text{
+
+    .home-section .hero-text {
         margin-top: 50px;
-        padding:  40px;
-        margin-left: 20px;
+        padding: 40px;
+        text-align: center;
     }
-    .home-section .hero-text h1{
+
+    .home-section .hero-text h1 {
         font-size: 3.5rem !important;
-      }
-      .home-section .container-fluid .row {
+    }
+
+    .home-section .container-fluid .row {
         flex-direction: column-reverse;
-      }
-      .home-section .banner-image{
+    }
+
+    .home-section .banner-image {
         justify-content: center;
         align-items: center;
         display: flex;
-      }
-      .home-section img{
+    }
+
+    .home-section img {
         max-width: 60%;
         margin-top: 150px;
-      }
-    #about-us .about img{
+    }
+
+    .home-section .classes-students-imgs {
+        display: none;
+
+    }
+
+    .home-section .student-img {
+        height: 4.8rem;
+        width: 4.8rem;
+        border-radius: 50%;
+        margin-right: -1.6rem;
+        border: 3px solid #f6e9ed;
+        margin-top: -50px !important;
+
+    }
+
+    .home-section .student-img:last-child {
+        margin-right: 0;
+    }
+
+    .home-section .classes-text {
+        margin-left: 50px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: -30px;
+    }
+
+    .home-section .classes-text span {
+        align-self: center;
+        color: #c9a488;
+        font-weight: 700;
+    }
+
+    #about-us .about img {
         margin-bottom: 5rem;
     }
+
     #about-us .section-title {
         margin-bottom: 5rem;
+        text-align: center;
     }
 }
 
@@ -144,7 +187,10 @@
         padding: 10px 30px;
         margin-top: 25px;
     }
-
+    .event-section iframe{
+        width: 300px;
+        height: 200px;
+      }
     .rows {
         flex-direction: column;
     }

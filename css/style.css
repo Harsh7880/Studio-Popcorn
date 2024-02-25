@@ -157,7 +157,7 @@ footer {
     font-weight: 100;
     font-weight: 300;
     --heading-font: "Oswald", Georgia, serif;
-    margin-bottom: 4rem;
+    margin: 5rem 0;
   }
 
 /**********************************/
@@ -261,18 +261,13 @@ footer {
   border-radius: 30px;
   font-weight: 500;
   display: inline-block;
-  border: 1px solid #0b0b0b;
+  border: 1px solid #c9a488;
   color: #000000;
   background: transparent;
 }
 
 .header.fixed .nav ul li a {
   color: #555555;
-}
-
-.header.fixed .button a {
-  border: 1px solid #000000;
-  color: #000000;
 }
 
 /**********************************/
@@ -289,7 +284,8 @@ footer {
 }
 .home-section .hero-text a{
   font-size: 1.5rem;
-  background-color: #c9a488 !important;
+  border: 1px solid #c9a488;
+  background-color: #fffcf8;
   color: black;
   margin-top: 20px;
 }
@@ -343,7 +339,10 @@ footer {
 /**********************************/
 /* EVENT SECTION */
 /**********************************/
-
+.event-section iframe{
+  width: 330px;
+  height: 230px;
+}
 .tab-content iframe
 {
   border-radius: 20px;
@@ -362,7 +361,7 @@ border: 1px solid #c9a488 !important;
 /**********************************/
 
 .classes-section {
-  padding: 5rem 0;
+  padding-bottom: 5rem;
 }
 
 .margin-bottom-md {
@@ -545,12 +544,13 @@ border: 1px solid #c9a488 !important;
   padding: 1.6rem;
   gap: 1.6rem;
 }
-
-.gallery-img img {
-  display: block;
+.gallery figure{
   width: 220px;
   height: 220px;
   object-fit: contain;
+}
+.gallery-img img {
+  display: block;
   transition: all 0.4s;
 }
 
@@ -837,7 +837,8 @@ border: 1px solid #c9a488 !important;
 
 .fa-facebook-f,
 .fa-youtube,
-.fa-instagram {
+.fa-instagram,
+.fa-whatsapp {
   font-size: 25px;
 }
 
@@ -863,17 +864,27 @@ border: 1px solid #c9a488 !important;
   border-color: #bb0000;
 }
 
+.rounded-social-buttons .social-button.whatsapp {
+  background: #25D366 ;
+}
+
+.rounded-social-buttons .social-button.whatsapp:hover,
+.rounded-social-buttons .social-button.whatsapp:focus {
+  color: #25D366;
+  background: #fefefe;
+  border-color: #25D366;
+}
+
 .rounded-social-buttons .social-button.instagram {
-  background: #125688;
+  background: #F46899; ;
 }
 
 .rounded-social-buttons .social-button.instagram:hover,
 .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
+  color: #F46899;
   background: #fefefe;
-  border-color: #125688;
+  border-color: #F46899;
 }
-
 
 figure {
   margin: 0;
