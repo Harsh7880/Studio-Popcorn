@@ -644,13 +644,11 @@ border: 1px solid #c9a488 !important;
 /**********************************/
 
 .gallery-section {
-  padding: 80px 0 0px;
+  padding: 30px 0 0px;
   margin-bottom: 100px;
 }
 
 .gallery-section .gallery-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
   padding: 15px;
 }
 
@@ -765,9 +763,21 @@ border: 1px solid #c9a488 !important;
 
 .gallery-popup .gp-controls .prev:hover i,
 .gallery-popup .gp-controls .next:hover i {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); 
 }
-
+.gallery-section .swiper-button-prev:after,.swiper-button-next:after{
+  color: #ffffff !important;
+  /* margin: -15px !important; */
+} 
+.gallery-section .mySwiper .swiper-button-prev,.gallery-section .mySwiper .swiper-button-next{
+  width: 50px !important;
+}
+.gallery-section .mySwiper [class^="swiper-button-"]::after{
+  font-size: 3rem;
+}
+.mySwiper .swiper-pagination-bullet{
+background-color: #c9a488 !important;
+}
 
 /**********************************/
 /* Footer Section */
