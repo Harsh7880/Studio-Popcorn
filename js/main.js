@@ -117,4 +117,33 @@ $(document).ready(function () {
     $(".close-btn, .bg-overlay").click(function () {
         $(".custom-model-main").removeClass('model-open');
     });
+
+     new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+          clickable: true,
+        },
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+        mousewheel: true,
+        keyboard: true,
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+              },
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            }
+          },
+      });
 })
