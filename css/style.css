@@ -572,8 +572,8 @@ border: 1px solid #c9a488 !important;
 }
 
 .people-section .people-item {
-  flex: 0 0 25%;
-  max-width: 25%;
+  /* flex: 0 0 25%; */
+  /* max-width: 25%; */
   padding: 15px;
   margin-top: 25px;
 }
@@ -776,19 +776,23 @@ border: 1px solid #c9a488 !important;
 .gallery-popup .gp-controls .next:hover i {
   background-color: rgba(0, 0, 0, 0.8); 
 }
-.gallery-section .swiper-button-prev:after,.swiper-button-next:after{
+.swiper-button-prev:after,.swiper-button-next:after{
   color: #ffffff !important;
   /* margin: -15px !important; */
 } 
-.gallery-section .mySwiper .swiper-button-prev,.gallery-section .mySwiper .swiper-button-next{
+.swiper-button-prev, .swiper-button-next{
   width: 50px !important;
 }
-.gallery-section .mySwiper [class^="swiper-button-"]::after{
+.mySwiper [class^="swiper-button-"]::after,.mySwiper1 [class^="swiper-button-"]::after{
   font-size: 3rem;
 }
-.mySwiper .swiper-pagination-bullet{
+.swiper-pagination-bullet{
 background-color: #c9a488 !important;
 }
+.mySwiper1 .swiper-pagination-bullet{
+  background-color: #c9a488 !important;
+  }
+  
 
 /**********************************/
 /* Footer Section */
