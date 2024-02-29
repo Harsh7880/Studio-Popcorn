@@ -45,9 +45,9 @@ $(document).ready(function () {
     })
     // // Scroll it
 
-    // $.scrollIt({
-    //     topOffset: -20
-    // });
+    $.scrollIt({
+        topOffset: -20
+    });
 
 
     //gallery popup
