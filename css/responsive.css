@@ -71,18 +71,14 @@
         padding: 10px 0;
     }
 
-    .home-section .home-content h1 {
-        font-size: 50px;
-    }
-
     .home-section .hero-text {
         margin-top: 50px;
-        padding: 40px;
+        padding: 20px;
         text-align: center;
     }
 
     .home-section .hero-text h1 {
-        font-size: 3.5rem !important;
+        font-size: 4rem !important;
     }
 
     .home-section .container-fluid .row {
@@ -96,7 +92,7 @@
     }
 
     .home-section img {
-        max-width: 60%;
+        max-width: 75%;
         margin-top: 150px;
     }
 
@@ -202,7 +198,6 @@
         max-width: 100%;
         padding: 25px;
     }
-
     footer {
         bottom: unset;
     }
@@ -219,7 +214,9 @@
     .classes-section .grid--3-cols {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    .classes-section .section-title {
+        margin-bottom: 4rem;
+      }
     .testimonials-box {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem 1rem;
@@ -249,6 +246,7 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
     }
+
     .subheading {
         text-align: center;
         font-size: 1rem;
@@ -271,5 +269,13 @@
         height: 160px;
         object-fit: contain;
       }
-      
+      .section-title {
+        margin-bottom: 0rem;
+      }
+      /**********************************/
+      /* ABOUT-US SECTION */
+/**********************************/
+      .about-us .block-text{
+        text-align: center;
+      }
 }
