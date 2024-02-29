@@ -647,9 +647,20 @@ border: 1px solid #c9a488 !important;
   padding: 30px 0 0px;
   margin-bottom: 100px;
 }
-
+.section-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .gallery-section .gallery-item {
   padding: 15px;
+}
+.wedding-popcorn__logo {
+  width: 200px;
+  margin-bottom: 3rem;
+}
+.wedding-popcorn__logo img {
+  width: 100%;
 }
 
 .gallery-section .gallery-item-inner {

@@ -131,6 +131,9 @@ $(document).ready(function () {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 2500,
+        },
         loop: true,
         mousewheel: true,
         keyboard: true,
