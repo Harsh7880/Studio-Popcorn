@@ -1,3 +1,39 @@
+@media (max-width: 68em) {
+    html{
+        font-size: 56.25%;
+    }
+    .header .button a {
+        padding: .6rem 2rem;
+    }
+    .home-section .hero-text{
+        margin-top: 15rem;
+        padding:  5rem;
+    }
+    .home-section .hero-text h1{
+        font-size: 5rem;
+    }
+    .container {
+        max-width: 110rem;
+        padding: 0 4rem;
+    }
+    .about-us img{
+        max-width: 80%;
+    }
+    .heading-secondary {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+    .testimonials-container {
+        padding: 2rem 3rem;
+    }
+    .testimonial-text {
+        font-size: 1.5rem;
+    }
+    .people-section .people-item {
+        padding: 5px;
+        margin-top: 25px;
+      }
+}
 @media(min-width: 782px) {
     .header .nav {
         display: block !important;
