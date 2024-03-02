@@ -46,7 +46,7 @@ $(document).ready(function () {
     // // Scroll it
 
     $.scrollIt({
-        topOffset: -20
+        topOffset: -50
     });
 
 
@@ -132,7 +132,8 @@ $(document).ready(function () {
           prevEl: ".swiper-button-prev",
         },
         autoplay: {
-            delay: 2500,
+          delay: 2500,
+          disableOnInteraction: true,
         },
         loop: true,
         mousewheel: true,
@@ -163,7 +164,8 @@ $(document).ready(function () {
           prevEl: ".swiper-button-prev",
         },
         autoplay: {
-            delay: 2500,
+          delay: 2500,
+          disableOnInteraction: true,
         },
         loop: true,
         mousewheel: true,
@@ -181,5 +183,4 @@ $(document).ready(function () {
             }
           },
       });
-      
 })
