@@ -1,3 +1,151 @@
+/**********************************/
+/* BELOW 1344px (Small desktops) */
+/**********************************/
+@media (max-width: 84em) {
+    .testimonials-section {
+      grid-template-columns: 60fr 40fr;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/**********************************/
+/* BELOW 1200px (Landscape tablets) */
+/**********************************/
+
+@media (max-width: 75em) {
+    html {
+      font-size: 56.25%;
+    }
+  
+    .heading-secondary {
+      font-size: 3.6rem;
+    }
+  
+    .heading-teriary {
+      font-size: 2.4rem;
+    }
+    .grid {
+      column-gap: 4.8rem;
+      row-gap: 6.4rem;
+    }
+    .testimonials-container {
+      padding: 9.6rem 3.2rem;
+    }
+}
+
+/**********************************/
+/* BELOW 960px (Tablets) */
+/**********************************/
+
+@media (max-width: 60em) {
+    html {
+      font-size: 50%;
+    }  
+    .classes-hours {
+      justify-content: center;
+      margin-top: 4.6rem;
+    }
+    .grid {
+      column-gap: 3.2rem;
+      row-gap: 4.8rem;
+    }
+    .classes-content {
+      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+    .testimonials-section {
+      grid-template-columns: 1fr;
+    }
+    .gallery {
+      grid-template-columns: repeat(6, 1fr);
+    }
+}
+  
+  /**********************************/
+  /* BELOW 688px (SmalerTablets) */
+  /**********************************/
+  
+@media (max-width: 43em) {
+    html {
+      font-size: 40.75%;
+    }
+    ul {
+        padding-left: 0rem;
+      }
+      .section-header {
+    margin: 0rem 0 4rem 0;
+      }
+      .class-features{
+        gap: 1.5rem;
+      }
+    .grid--3-cols,
+    .grid--4-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .classes-list-box {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .heading-secondary {
+      margin-bottom: 4.8rem;
+    }
+    .types-box {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.4rem;
+        margin-bottom: .5rem;
+      }
+    .students-type {
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    }
+    .classes-name {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .class-item {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+      }
+      .people-section .people-item {
+        padding: 3.5rem 2rem;
+        max-width: 85%;
+    }
+      
+}
+  
+  /**********************************/
+  /* BELOW 528px (Mobile phones) */
+  /**********************************/
+  
+@media (max-width: 33em) {
+    /* html {
+      font-size: 50.75%;
+    }  */
+    .grid {
+      margin-bottom: 4.8rem;
+    }
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+      grid-template-columns: 1fr;
+    }
+    .testimonials-box {
+      grid-template-columns: 1fr;
+    }
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .people-section .people-item {
+        padding: 3.5rem 2rem;
+    }
+  }
 @media (max-width: 68em) {
     html{
         font-size: 56.25%;
@@ -23,72 +171,17 @@
         font-size: 2.2rem;
         margin-bottom: 3rem;
     }
-    .testimonials-container {
-        padding: 2rem 3rem;
-    }
-    .testimonial-text {
-        font-size: 1.5rem;
-    }
-    .people-section .people-item {
-        padding: 5px;
-        margin-top: 25px;
-      }
-}
-@media(min-width: 782px) {
-    .header .nav {
-        display: block !important;
-    }
 }
 
 @media (max-width: 991px) {
-
-    .gallery-section .gallery-item,
-    .people-section .people-item,
-    .event-section .event-item {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .header .button {
-        display: none;
-    }
-
-    .classes-section .grid--3-cols {
-        grid-template-columns: repeat(1, 1fr);
-        width: 95%;
-    }
-
-    .testimonials-box {
-        grid-template-columns: 1fr;
-        gap: 1rem 1rem;
-        width: 80%;
-    }
-
-    .testimonials-section {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonials-container {
-        padding: 6rem;
-    }
-}
-
-@media(max-width: 781px) {
-
-    .header .logo {
-        padding: 8px 15px;
-    }
-
-    .header .logo img {
-        width: 120px;
-    }
-
     .header .hamburger-btn {
         display: flex;
         margin-right: 5%;
         background-color: black;
     }
-
+    .header .button{
+        display: none;
+    }
     .header .nav {
         flex: 0 0 100%;
         max-width: 100%;
@@ -96,31 +189,21 @@
         border-top: 1px solid #cccccc;
         display: none;
     }
-
     .header .nav ul li {
         display: block;
-        margin-left: 10px;
+        margin-left: 1rem;
     }
-
     .header .nav ul li a {
         color: #555555;
-        padding: 10px 0;
+        padding: 1rem 0;
     }
-
-    .home-section .hero-text {
-        margin-top: 50px;
-        padding: 20px;
-        text-align: center;
+    .home-section .hero-text{
+        margin-top: 15rem;
+        padding:  5rem;
     }
-
-    .home-section .hero-text h1 {
-        font-size: 4rem !important;
+    .home-section .hero-text h1{
+        font-size: 6rem;
     }
-
-    .home-section .container-fluid .row {
-        flex-direction: column-reverse;
-    }
-
     .home-section .banner-image {
         justify-content: center;
         align-items: center;
@@ -129,14 +212,68 @@
 
     .home-section img {
         max-width: 75%;
-        margin-top: 150px;
+    }
+    .home-section .classes-students-imgs {
+        margin-top: -3rem;
+    }
+    .event-section iframe {
+        width: 42rem;
+        height: 26rem;
+      }
+    .container {
+        max-width: 110rem;
+        padding: 0 3rem;
+    }
+    .about-us img{
+        max-width: 80%;
+    }
+    .gallery-section .gallery-item,
+    .event-section .event-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 781px) {
+   
+    .header .logo {
+        padding: .8rem 1.5rem;
+    }
+
+    .header .logo img {
+        width: 12rem;
+    }
+    .home-section .banner-image {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .home-section img {
+        max-width: 75%;
+        margin-top: 15rem;
+    }
+    .home-section .container-fluid .row {
+        flex-direction: column-reverse;
+    }
+    .home-section .hero-text {
+        margin-top: 5rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .home-section .hero-text h1 {
+        font-size: 4rem !important;
+    }
+
+    .home-section img {
+        max-width: 75%;
+        margin-top: 15rem;
     }
 
     .home-section .classes-students-imgs {
         display: none;
 
     }
-
     .home-section .student-img {
         height: 4.8rem;
         width: 4.8rem;
@@ -174,144 +311,40 @@
     }
 }
 
+@media(max-width: 43em) {
 
-@media(max-width: 674px) {
-    .header .container {
-        padding: 15px 0;
+    .home-section .banner-image {
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
-
-    .header .button a {
-        display: none;
+    .home-section img {
+        max-width: 75%;
+        margin-top: 15rem;
     }
-
-    .header .logo {
-        margin-right: 150px;
+    .home-section .container-fluid .row {
+        flex-direction: column-reverse;
     }
-
-    .home-section .home-content p {
-        font-size: 24px;
-        margin-top: 0px;
+    /* About Us Section */
+    .about-us .block-text{
+        text-align: center;
     }
-
-    .home-section .slide.active .home-content p {
-        opacity: 0;
-        animation: fadeInTop 1s ease forwards;
+    /* Events Section */
+    .tab-content iframe {
+        border-radius: 2rem;
     }
-
-    @keyframes fadeInTop {
-        0% {
-            transform: translateY(-25px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0px);
-        }
+    .event-section iframe {
+        width: 38rem;
+        height: 25rem;
     }
-
-    .home-section .home-content h1 {
-        font-size: 50px;
-        margin-top: 40px;
-    }
-
-    .home-section .home-content button {
-        font-size: 18px;
-        padding: 10px 30px;
-        margin-top: 25px;
-    }
-    .event-section iframe{
-        width: 300px;
-        height: 200px;
-      }
-    .rows {
-        flex-direction: column;
-    }
-
     /* Gallery Section */
-
     .gallery-section .gallery-item {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 25px;
-    }
-    footer {
-        bottom: unset;
+        padding: 2.5rem;
     }
 
-    .col {
-        flex-basis: 100%;
-    }
-
-    .col:nth-child(2),
-    .col:nth-child(3) {
-        flex-basis: 100%;
-    }
-
-    .classes-section .grid--3-cols {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .classes-section .section-title {
-        margin-bottom: 4rem;
-      }
-    .testimonials-box {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem 1rem;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .testimonials-section {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonials-container {
-        padding: 2rem;
-    }
-    .testimonial-text {
-        font-size: 1.5rem;
-        line-height: 1.5;
-        margin-bottom: 1rem;
-    }
-    
-    .testimonial-name {
-        font-size: 1.4rem;
-    }
-      
-
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 2rem;
-    }
-
-    .subheading {
-        text-align: center;
-        font-size: 1rem;
-        margin-bottom: 1.8rem;
-      }
-      .heading-secondary {
-        text-align: center;
-        font-size: 2rem !important;
-        margin-bottom: 1.8rem !important;
-        line-height: 1.2;
-      }
-    .people-section .people-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 35px 20px;
-        margin-top: 7rem;
-    }
-    .gallery figure{
-        width: 160px;
-        height: 160px;
-        object-fit: contain;
-      }
-      .section-title {
+    .section-title {
         margin-bottom: 0rem;
-      }
-      /**********************************/
-      /* ABOUT-US SECTION */
-/**********************************/
-      .about-us .block-text{
-        text-align: center;
-      }
+    }
 }

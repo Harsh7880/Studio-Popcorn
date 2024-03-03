@@ -552,11 +552,7 @@ border: 1px solid #c9a488 !important;
   padding: 1.6rem;
   gap: 1.6rem;
 }
-.gallery figure{
-  width: 22rem;
-  height: 22rem;
-  object-fit: cover;
-}
+
 .gallery-img img {
   display: block;
   transition: all 0.4s;
