@@ -35,7 +35,7 @@ h4,
   --helper-tint: #f3f4ff;
   --bg: rgb(249 249 255);
   --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
-  --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+  --shadpw: 0px 0px 20px 0px rgba(219, 214, 193, 0.2);
 }
 
 h3,
@@ -1105,10 +1105,6 @@ form .form-group input{
   font-size: 3rem;
   color: #fff;
 }
-.swiper {
-  width: 100%;
-  height: 100%;
-}
 
 .swiper-slide {
   text-align: center;
@@ -1135,10 +1131,12 @@ form .form-group input{
   background-color: var(--third);
   border-radius: 10px;
   text-align: left;
-  box-shadow: var(--shadpw);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: relative;
 }
-
+.section-testimonial .swiper-slide{
+ padding: 1rem;
+}
 .swiper-client-msg::before {
   content: "";
   position: absolute;

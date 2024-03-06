@@ -209,7 +209,31 @@
       .people-section .people-item {
         padding: 3.5rem 2rem;
     }
-      
+    .testimonials-section iframe {
+      border-radius: 10px;
+      width: 36rem;
+      height: 24rem;
+      margin-left: 2rem;
+  }
+  .swiper-client-msg p::before {
+    left: 2rem;
+    font-size: 3rem;
+  }
+  
+  .swiper-client-msg p::after {
+    right: 5%;
+    font-size: 3rem;
+  }
+  .swiper-client-msg {
+    padding: 4rem 6rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .section-testimonial .swiper-wrapper{
+    padding: 1rem;
+  }
+  .section-testimonial .swiper-slide{
+  padding: 2rem;
+  }
 }
   
   /**********************************/
