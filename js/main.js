@@ -151,6 +151,7 @@ $(document).ready(function () {
           },
       });
       new Swiper(".mySwiper1", {
+        slidesPerView: 4,
         pagination: {
           el: ".swiper-pagination",
           dynamicBullets: true,
@@ -177,6 +178,9 @@ $(document).ready(function () {
               slidesPerView: 2,
             },
             768: {
+              slidesPerView: 3,
+            },
+            1400: {
               slidesPerView: 4,
             }
           },

@@ -293,6 +293,11 @@ footer {
   font-size: 7rem;
   font-weight: 500;
 }
+.home-section .banner-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home-section .banner-image img{
   max-width: 90%;
   margin-top: 150px;
