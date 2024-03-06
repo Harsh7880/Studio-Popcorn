@@ -186,3 +186,36 @@ $(document).ready(function () {
           },
       });
 })
+new Swiper(".mySwiper3", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: true,
+  // },
+  loop: true,
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+      300:{
+          slidesPerView: 1,
+          spaceBetween: 50,
+        },
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      }
+    },
+});
