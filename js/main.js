@@ -122,10 +122,6 @@ new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   cssMode: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true,
-  },
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
@@ -153,26 +149,21 @@ new Swiper(".mySwiper1", {
     dynamicBullets: true,
     clickable: true,
   },
+  loop: true,
   cssMode: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true,
-  },
   mousewheel: true,
+  loop: true,
   keyboard: true,
   breakpoints: {
     300: {
       slidesPerView: 1,
       spaceBetween: 50,
-      loop: true,
     },
     640: {
       slidesPerView: 2,
-      loop: true,
     },
     768: {
       slidesPerView: 3,
-      loop: true,
     },
     1400: {
       slidesPerView: 4,
@@ -188,17 +179,12 @@ new Swiper(".mySwiper3", {
     clickable: true,
   },
   cssMode: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true,
-  },
   loop: true,
   mousewheel: true,
   keyboard: true,
   breakpoints: {
     300: {
       slidesPerView: 1,
-      spaceBetween: 50,
     },
     640: {
       slidesPerView: 2,
