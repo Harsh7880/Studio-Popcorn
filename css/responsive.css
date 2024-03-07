@@ -2,13 +2,13 @@
 /* BELOW 1344px (Small desktops) */
 /**********************************/
 @media (max-width: 84em) {
-    .testimonials-section {
-      grid-template-columns: 60fr 40fr;
-    }
-  
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .testimonials-section {
+    grid-template-columns: 60fr 40fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /**********************************/
@@ -16,39 +16,39 @@
 /**********************************/
 
 @media (max-width: 75em) {
-    html {
-      font-size: 56.25%;
-    }
-    .header .button a {
-      padding: .6rem 2rem;
+  html {
+    font-size: 56.25%;
   }
-    .header .button a {
-      padding: .6rem 2rem;
-    }
-    .heading-secondary {
-      font-size: 3.6rem;
-    }
+  .header .button a {
+    padding: .6rem 2rem;
+}
+  .header .button a {
+    padding: .6rem 2rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
 
-    .heading-teriary {
-      font-size: 2.4rem;
-    }
-    .about-us img{
-      max-width: 80%;
+  .heading-teriary {
+    font-size: 2.4rem;
   }
-    .grid {
-      column-gap: 4.8rem;
-      row-gap: 6.4rem;
-    }
-    .testimonials-container {
-      padding: 9.6rem 3.2rem;
-    }
-    .home-section .hero-text {
-      margin-top: 20rem;
-      padding: 4rem;
+  .about-us img{
+    max-width: 80%;
+}
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
   }
-  .home-section .hero-text h1 {
-    font-family: 'Playball', cursive !important;
-    font-size: 6rem;
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+  .home-section .hero-text {
+    margin-top: 20rem;
+    padding: 4rem;
+}
+.home-section .hero-text h1 {
+  font-family: 'Playball', cursive !important;
+  font-size: 6rem;
 }
 }
 
@@ -57,197 +57,221 @@
 /**********************************/
 
 @media (max-width: 60em) {
-    html{
-    font-size: 50%;
-    }
-    .header .hamburger-btn {
-      display: flex;
-      margin-right: 5%;
-      background-color: black;
+  html{
+  font-size: 50%;
   }
-  .heading-secondary {
-    font-size: 2.2rem;
-    margin-bottom: 3rem;
+  .header .hamburger-btn {
+    display: flex;
+    margin-right: 5%;
+    background-color: black;
 }
-  .header .button{
-      display: none;
-  }
-  .header .nav {
-      flex: 0 0 100%;
-      max-width: 100%;
-      background-color: #ffffff;
-      border-top: 1px solid #cccccc;
-      display: none;
-  }
-  .header .nav ul li {
-      display: block;
-      margin-left: 1rem;
-  }
-  .header .nav ul li a {
-      color: #555555;
-      padding: 1rem 0;
-  }
+.heading-secondary {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+.header .button{
+    display: none;
+}
+.header .nav {
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+    display: none;
+}
+.header .nav ul li {
+    display: block;
+    margin-left: 1rem;
+}
+.header .nav ul li a {
+    color: #555555;
+    padding: 1rem 0;
+}
 
 
-  .home-section .hero-text h1{
-    font-size: 5rem;
+.home-section .hero-text h1{
+  font-size: 5rem;
 }
 .home-section .classes-students-imgs {
-    margin-top: -3rem;
+  margin-top: -3rem;
 }
 .container {
-  max-width: 110rem;
-  padding: 0 3rem;
+max-width: 110rem;
+padding: 0 3rem;
 }
-    .grid {
-      column-gap: 3.2rem;
-      row-gap: 4.8rem;
-    }
-    .classes-content {
-      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
-    }
-    .testimonials-section {
-      grid-template-columns: 1fr;
-    }
-    .gallery {
-      grid-template-columns: repeat(6, 1fr);
-    }
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+  .classes-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .testimonials-section {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
-  
-  /**********************************/
-  /* BELOW 688px (SmalerTablets) */
-  /**********************************/
-  
+
+/**********************************/
+/* BELOW 688px (SmalerTablets) */
+/**********************************/
+
 @media (max-width: 43em) {
-    html {
-      font-size: 45.75%;
+  html {
+    font-size: 45.75%;
+  }
+  ul {
+      padding-left: 0rem;
     }
-    ul {
-        padding-left: 0rem;
-      }
-      .home-section .classes-students-imgs {
-        display: none;
-    }
-     .home-section .container-fluid .row {
-      flex-direction: column-reverse;
-    }
-          /* Home Section */
-    .home-section .banner-image img {
-      max-width: 75%;
-    }
-    .home-section .hero-text {
-      margin-top: 5rem;
-      padding: 1rem 4rem;
+    .home-section .classes-students-imgs {
+      display: none;
+  }
+   .home-section .container-fluid .row {
+    flex-direction: column-reverse;
+  }
+        /* Home Section */
+  .home-section .banner-image img {
+    max-width: 75%;
+  }
+  .home-section .hero-text {
+    margin-top: 5rem;
+    padding: 1rem 4rem;
+    text-align: center;
+  }
+  .home-section .hero-text h1 {
+    font-size: 4rem !important;
+ }
+    /* About Us Section */
+    .about-us .block-text{
       text-align: center;
     }
-    .home-section .hero-text h1 {
-      font-size: 4rem !important;
+    #about-us .about img {
+      margin-bottom: 5rem;
+    }
+    .about-us .section-title {
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+    .about-us img {
+      max-width: 80%;
+  }
+    .class-features{
+      gap: 1.5rem;
+    }
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .classes-list-box {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .types-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4rem;
+      margin-bottom: .5rem;
+    }
+  .students-type {
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  }
+  .classes-section{
+    padding: 2rem 3rem;
    }
-      /* About Us Section */
-      .about-us .block-text{
-        text-align: center;
-      }
-      #about-us .about img {
-        margin-bottom: 5rem;
-      }
-      .about-us .section-title {
-        margin-bottom: 5rem;
-        text-align: center;
-      }
-      .about-us img {
-        max-width: 80%;
-    }
-      .class-features{
-        gap: 1.5rem;
-      }
-    .grid--3-cols,
-    .grid--4-cols {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .classes-list-box {
-      grid-column: 1 / -1;
-      justify-self: center;
-    }
-    .gallery {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .heading-secondary {
-      margin-bottom: 4.8rem;
-    }
-    .types-box {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.4rem;
-        margin-bottom: .5rem;
-      }
-    .students-type {
-    padding: 0.4rem 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    }
-    .classes-section{
-      padding: 2rem 3rem;
-     }
-    .classes-name {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    .class-item {
-        font-size: 1.6rem;
-        line-height: 1.6rem;
-      }
-      .testimonials-container {
-        padding: 4rem 3.2rem;
-    }
-    .testimonials-box {
-      gap: 2.8rem 3rem;
+  .classes-name {
+      font-size: 2rem;
+      margin-bottom: 2rem;
   }
-  .testimonial-text {
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-      .people-section .people-item {
-        padding: 3.5rem 2rem;
+  .class-item {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
     }
-      
+    .testimonials-container {
+      padding: 4rem 3.2rem;
+  }
+  .testimonials-box {
+    gap: 2.8rem 3rem;
 }
-  
-  /**********************************/
-  /* BELOW 528px (Mobile phones) */
-  /**********************************/
-  
+.testimonial-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+    .people-section .people-item {
+      padding: 3.5rem 2rem;
+  }
+  .testimonials-section iframe {
+    border-radius: 10px;
+    width: 36rem;
+    height: 24rem;
+    margin-left: 2rem;
+}
+.swiper-client-msg p::before {
+  left: 2rem;
+  font-size: 3rem;
+}
+
+.swiper-client-msg p::after {
+  right: 5%;
+  font-size: 3rem;
+}
+.swiper-client-msg {
+  padding: 4rem 6rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section-testimonial .swiper-wrapper{
+  padding: 1rem;
+}
+.section-testimonial .swiper-slide{
+padding: 2rem;
+}
+}
+
+/**********************************/
+/* BELOW 528px (Mobile phones) */
+/**********************************/
+
 @media (max-width: 33em) {
-  html {
-    font-size: 56.25%;
+html {
+  font-size: 56.25%;
+}
+  .grid {
+    margin-bottom: 4.8rem;
   }
-    .grid {
-      margin-bottom: 4.8rem;
-    }
-    .grid--2-cols,
-    .grid--3-cols,
-    .grid--4-cols {
-      grid-template-columns: 1fr;
-    }
-  
-    /* Events Section */
-        .tab-content iframe {
-          border-radius: 2rem;
-      }
-      .event-section iframe {
-          width: 38rem;
-          height: 25rem;
-      }
-    .testimonials-box {
-      grid-template-columns: 1fr;
-    }
-    .gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    /* Gallery Section */
-    .gallery-section .gallery-item {
-      flex: 0 0 100%;
-      max-width: 100%;
-      padding: 2.5rem;
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
   }
+
+  /* Events Section */
+      .tab-content iframe {
+        border-radius: 2rem;
+    }
+    .event-section iframe {
+        width: 38rem;
+        height: 25rem;
+    }
+  .testimonials-box {
+    grid-template-columns: 1fr;
   }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Gallery Section */
+  .gallery-section .gallery-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 2.5rem;
+}
+}
 

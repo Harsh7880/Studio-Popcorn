@@ -118,6 +118,9 @@ SPACING SYSTEM (px)
   margin-bottom: 4.8rem !important;
 }
 
+.margin-top-md {
+  margin-top: 4.8rem !important;
+}
 strong {
   font-weight: 500;
 }
