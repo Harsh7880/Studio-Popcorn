@@ -526,7 +526,11 @@ border: 1px solid #c9a488 !important;
   height: 37rem;
   margin-left: 3rem;
 }
-
+.testimonials-section .youtube-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .testimonials-container {
   display: block;
   padding: 2rem 6rem;

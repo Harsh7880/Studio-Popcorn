@@ -213,7 +213,7 @@ padding: 0 3rem;
     border-radius: 10px;
     width: 36rem;
     height: 24rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
 }
 .swiper-client-msg p::before {
   left: 2rem;
