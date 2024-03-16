@@ -172,14 +172,29 @@ footer {
 }
 
 .header.fixed {
-  background-color: #ffffff;
+  transition: all 0.5s ease;
+  background-color: var(--light-color);
   box-shadow: 0 0 8px #cccccc;
 }
 
 .header .logo {
   padding: 0 1.5rem;
 }
-
+header .logowhite{
+  display: inline-block;
+}
+header .logoblack{
+  display: none;
+  visibility: hidden;
+}
+.header.fixed .logoblack{
+  display: block;
+  visibility: visible;
+}
+.header.fixed .logowhite{
+  display: none;
+  visibility: hidden;
+}
 .header .logo img {
   width: 12rem;
 }
@@ -187,7 +202,7 @@ footer {
   height: 34px;
   width: 40px;
   border-radius: 3px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--light-color);
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -204,7 +219,7 @@ footer {
   display: block;
   height: 1px;
   width: 16px;
-  background-color: #ffffff;
+  background-color: var(--light-color);
   position: relative;
   transition: all 0.5s ease;
 }
@@ -217,7 +232,7 @@ footer {
   height: 1px;
   width: 100%;
   right: 0;
-  background-color: #ffffff;
+  background-color: var(--light-color);;
 }
 
 .header .hamburger-btn span:before {
@@ -245,7 +260,7 @@ footer {
 
 .header .nav ul li a {
   display: block;
-  color: #000000;
+  color: var(--light-color);;
   font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -258,10 +273,13 @@ footer {
   font-weight: 500;
   display: inline-block;
   border: 1px solid #c9a488;
-  color: #000000;
+  color: var(--light-color);;
   background: transparent;
 }
-
+.header.fixed .button a {
+  color: var(--dark-color);;
+  background: transparent;
+}
 .header.fixed .nav ul li a {
   color: #555555;
 }
@@ -272,11 +290,17 @@ footer {
 .home-section {
   min-height: 100vh;
   position: relative;
-  background-color: #fffcf8;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg) center / cover no-repeat fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.classes-text{
+  color: var(--light-color);;
 }
 .home-section .hero-text{
   margin-top: 20rem;
   padding:  7rem;
+  color: var(--light-color);;
 }
 .home-section .hero-text a{
   font-size: 1.5rem;
@@ -924,6 +948,9 @@ background-color: #c9a488 !important;
 /**********************************/
 .footer{
   background-color: #e9dacf;
+}
+.footer .footer-logo img{
+  width: 65%;
 }
 .footer .footer-item a.text-body:hover {
   color: #D4A762 !important;

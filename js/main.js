@@ -149,15 +149,14 @@ new Swiper(".mySwiper1", {
     dynamicBullets: true,
     clickable: true,
   },
-  loop: true,
   cssMode: true,
   mousewheel: true,
-  loop: true,
   keyboard: true,
   breakpoints: {
     300: {
       slidesPerView: 1,
       spaceBetween: 50,
+      loop: true,
     },
     640: {
       slidesPerView: 2,
