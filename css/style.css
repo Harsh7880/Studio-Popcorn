@@ -232,7 +232,7 @@ header .logoblack{
   height: 1px;
   width: 100%;
   right: 0;
-  background-color: var(--light-color);;
+  background-color: var(--light-color);
 }
 
 .header .hamburger-btn span:before {
@@ -260,7 +260,7 @@ header .logoblack{
 
 .header .nav ul li a {
   display: block;
-  color: var(--light-color);;
+  color: var(--light-color);
   font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -273,11 +273,11 @@ header .logoblack{
   font-weight: 500;
   display: inline-block;
   border: 1px solid #c9a488;
-  color: var(--light-color);;
+  color: var(--light-color);
   background: transparent;
 }
 .header.fixed .button a {
-  color: var(--dark-color);;
+  color: var(--dark-color);
   background: transparent;
 }
 .header.fixed .nav ul li a {
@@ -290,17 +290,17 @@ header .logoblack{
 .home-section {
   min-height: 100vh;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg) center / cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg);
   background-position: center center;
   background-size: cover;
 }
 .classes-text{
-  color: var(--light-color);;
+  color: var(--light-color);
 }
 .home-section .hero-text{
   margin-top: 20rem;
   padding:  7rem;
-  color: var(--light-color);;
+  color: var(--light-color);
 }
 .home-section .hero-text a{
   font-size: 1.5rem;
@@ -615,8 +615,6 @@ border: 1px solid #c9a488 !important;
 }
 
 .people-section .people-item {
-  /* flex: 0 0 25%; */
-  /* max-width: 25%; */
   padding: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -927,7 +925,6 @@ border: 1px solid #c9a488 !important;
 }
 .swiper-button-prev:after,.swiper-button-next:after{
   color: #ffffff !important;
-  /* margin: -15px !important; */
 } 
 .swiper-button-prev, .swiper-button-next{
   width: 5rem !important;
@@ -1042,7 +1039,7 @@ background-color: #c9a488 !important;
   border-color: #25D366;
 }
 .rounded-social-buttons .social-button.instagram {
-  background: #F46899; ;
+  background: #F46899;
 }
 .rounded-social-buttons .social-button.instagram:hover,
 .rounded-social-buttons .social-button.instagram:focus {
@@ -1138,7 +1135,7 @@ form .form-group input{
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; /* z-index: 1050; */
+  left: 0;
   -webkit-overflow-scrolling: touch;
   outline: 0;
   opacity: 0;
