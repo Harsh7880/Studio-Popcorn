@@ -1,0 +1,26 @@
+{
+  "name": "studio-popcorn",
+  "version": "1.0.0",
+  "description": "",
+  "maind": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harsh7880/Studio-Popcorn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "sharp": "^0.31.3"
+  },
+  "bugs": {
+    "url": "https://github.com/Harsh7880/Studio-Popcorn/issues"
+  },
+  "homepage": "https://github.com/Harsh7880/Studio-Popcorn#readme"
+}
