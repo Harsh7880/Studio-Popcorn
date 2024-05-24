@@ -142,6 +142,7 @@ padding: 0 3rem;
   }
   .home-section .hero-text h1 {
     font-size: 4rem !important;
+    margin-top: 25%;
  }
     /* About Us Section */
     .about-us .block-text{
@@ -243,6 +244,14 @@ padding: 2rem;
 @media (max-width: 33em) {
 html {
   font-size: 56.25%;
+}
+
+.home-section{
+  min-height: 40vh;
+}
+.home-section .banner-image{
+  display: none;
+  visibility: hidden;
 }
   .grid {
     margin-bottom: 4.8rem;

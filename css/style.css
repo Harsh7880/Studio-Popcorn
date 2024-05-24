@@ -185,12 +185,12 @@ header .logowhite{
   display: inline-block;
 }
 header .logoblack{
-  display: none;
-  visibility: hidden;
+  /* display: none; */
+  /* visibility: hidden; */
 }
 .header.fixed .logoblack{
-  display: block;
-  visibility: visible;
+  /* display: block; */
+  /* visibility: visible; */
 }
 .header.fixed .logowhite{
   display: none;
@@ -261,7 +261,7 @@ header .logoblack{
 
 .header .nav ul li a {
   display: block;
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -274,8 +274,7 @@ header .logoblack{
   font-weight: 500;
   display: inline-block;
   border: 1px solid #c9a488;
-  color: var(--light-color);
-  background: transparent;
+  color: var(--dark-color);
 }
 .header.fixed .button a {
   color: var(--dark-color);
@@ -291,7 +290,7 @@ header .logoblack{
 .home-section {
   min-height: 100vh;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background.jpg?as=webp);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background.jpg?as=webp); */
   background-position: center center;
   background-size: cover;
 }
@@ -301,7 +300,7 @@ header .logoblack{
 .home-section .hero-text{
   margin-top: 20rem;
   padding:  7rem;
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 .home-section .hero-text a{
   font-size: 1.5rem;
@@ -352,11 +351,25 @@ header .logoblack{
   font-size: 1.8rem;
   font-weight: 600;
   margin-top: 1rem;
+  color: #000000;
 }
 .home-section .classes-text span {
   align-self: center;
   color: #c9a488;
   font-weight: 700;
+}
+.hero-cta .button{
+  padding: .7rem 3rem;
+  margin-right: 10px;
+  border-radius: 3rem;
+  font-weight: 500;
+  display: inline-block;
+  border: 1px solid #c9a488;
+  color: var(--dark-color);
+}
+.hero-cta .play-icon{
+  margin: 0 5px;
+  color: var( --primary-color);
 }
 
 /**********************************/
