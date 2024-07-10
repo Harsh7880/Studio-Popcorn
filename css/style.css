@@ -399,10 +399,6 @@ header .logoblack{
   color: var( --primary-color);
 }
 
-.hero-cta .btn-2:hover {
-  box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, .2);
-}
-
 /**********************************/
 /* ABOUT-US SECTION */
 /**********************************/
@@ -1019,6 +1015,9 @@ background-color: #c9a488 !important;
 .footer
  .fa,.fas {
   font-weight: 900;
+}
+.footer .phone-icon{
+  transform: rotate(90deg);
 }
 .footer .container{
   max-width: 100% !important; 
