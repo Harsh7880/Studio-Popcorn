@@ -267,6 +267,30 @@ header .logoblack{
   text-transform: uppercase;
   transition: all 0.5s ease-in;
 }
+.header .nav ul li a,
+.header .nav ul li a:after,
+.header .nav ul li a:before {
+  transition: all .5s;
+}
+/* stroke */
+.header .nav ul li a {
+  position: relative;
+}
+.header .nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #c9a488;
+  height: 1px;
+}
+.header .nav ul li a:hover:after {
+  width: 100%;
+}
 
 .header .button a {
   padding: .7rem 3rem;
@@ -290,7 +314,7 @@ header .logoblack{
 .home-section {
   min-height: 100vh;
   position: relative;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background.jpg?as=webp); */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/DSC01539.JPG); */
   background-position: center center;
   background-size: cover;
 }
@@ -298,7 +322,7 @@ header .logoblack{
   color: var(--light-color);
 }
 .home-section .hero-text{
-  margin-top: 20rem;
+  margin-top: 17rem;
   padding:  7rem;
   color: var(--dark-color);
 }
@@ -324,7 +348,8 @@ header .logoblack{
 }
 .home-section .banner-image img{
   max-width: 90%;
-  margin-top: 150px;
+  margin-top: 18rem;
+  margin-right: 10rem;
 }
 
 .home-section .classes-students-imgs {
@@ -332,7 +357,7 @@ header .logoblack{
   padding: 2rem;
   align-items: center;
   padding-left: 7rem;
-  margin-top: -5rem;
+  margin-top: -8rem;
 }
 .home-section .student-img {
   height: 4.8rem;
@@ -366,10 +391,16 @@ header .logoblack{
   display: inline-block;
   border: 1px solid #c9a488;
   color: var(--dark-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: box-shadow 0.16s ease;
 }
 .hero-cta .play-icon{
   margin: 0 5px;
   color: var( --primary-color);
+}
+
+.hero-cta .btn-2:hover {
+  box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, .2);
 }
 
 /**********************************/
@@ -961,7 +992,13 @@ background-color: #c9a488 !important;
   background-color: #e9dacf;
 }
 .footer .footer-logo img{
-  width: 65%;
+  width: 45%;
+  margin-top: -24px;
+}
+.footer .footer-text p{
+  font-size: 1.5rem;
+  color: #504e4e;
+  padding: -10px 20px;
 }
 .footer .footer-item a.text-body:hover {
   color: #D4A762 !important;
