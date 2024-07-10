@@ -6,13 +6,15 @@ function closeForm() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var btnOpenForm = document.getElementById("btnOpenForm");
+  var btnOpenForms = document.querySelectorAll(".btnOpenForm");
   var formPopupBg = document.querySelector(".form-popup-bg");
 
-  // Open form when button is clicked
-  btnOpenForm.addEventListener("click", function (event) {
-    event.preventDefault();
-    formPopupBg.classList.add("is-visible");
+  // Open form when any button with class 'btnOpenForm' is clicked
+  btnOpenForms.forEach(function (btnOpenForm) {
+    btnOpenForm.addEventListener("click", function (event) {
+      event.preventDefault();
+      formPopupBg.classList.add("is-visible");
+    });
   });
 
   // Close form when clicking outside or on close button
@@ -26,6 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function closeForm() {
+  var formPopupBg = document.querySelector(".form-popup-bg");
+  formPopupBg.classList.remove("is-visible");
+}
+
 
 // Function to toggle the navigation menu
 function toggleNav() {
