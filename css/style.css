@@ -1151,9 +1151,14 @@ background-color: #c9a488 !important;
   width: 4rem;
   height: 4rem;
   position: absolute;
-  top: 0;
-  right: 0;
-  border: solid .1rem #fff;
+  top: 1rem;
+  right: 1rem;
+  border: none
+}
+.close-button:hover {
+  background: var(--light-color);
+  border-radius: 50%;
+  color: #000;
 }
 .form-popup-bg:before{
   content:'';
