@@ -1,10 +1,10 @@
 // Book Now Form
-
 // Function to close the form popup
 function closeForm() {
   document.querySelector(".form-popup-bg").classList.remove("is-visible");
 }
 
+// Open Book Now Form
 document.addEventListener("DOMContentLoaded", function () {
   var btnOpenForms = document.querySelectorAll(".btnOpenForm");
   var formPopupBg = document.querySelector(".form-popup-bg");
@@ -29,13 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function closeForm() {
-  var formPopupBg = document.querySelector(".form-popup-bg");
-  formPopupBg.classList.remove("is-visible");
-}
-
-
-// Function to toggle the navigation menu
+// Toggle the navigation menu
 function toggleNav() {
   var nav = document.querySelector(".header .nav");
   if (nav.style.display === "block") {
