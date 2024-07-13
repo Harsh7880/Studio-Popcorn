@@ -410,6 +410,11 @@ header .logoblack{
   color: black;
   margin-top: 20px;
 }
+.about-img{
+  border-radius: 2rem;
+  /* margin-right: 1rem; */
+  max-width: 90%;
+}
 
 /**********************************/
 /* EVENT SECTION */
@@ -996,9 +1001,7 @@ background-color: #c9a488 !important;
   color: #504e4e;
   padding: -10px 20px;
 }
-.footer .footer-item a.text-body:hover {
-  color: #D4A762 !important;
-}
+
 .footer .footer-text{
   font-size: 1.5rem;
   color: #504e4e;
@@ -1011,6 +1014,7 @@ background-color: #c9a488 !important;
 }
 .footer .text-body {
   color: #504e4e !important;
+  margin-bottom: 0;
 }
 .footer
  .fa,.fas {
