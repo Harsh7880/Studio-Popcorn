@@ -410,6 +410,11 @@ header .logoblack{
   color: black;
   margin-top: 20px;
 }
+.about-img{
+  border-radius: 2rem;
+  /* margin-right: 1rem; */
+  max-width: 90%;
+}
 
 /**********************************/
 /* EVENT SECTION */
